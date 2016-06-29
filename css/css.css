@@ -1,0 +1,125 @@
+html,body{
+		background-color: #d9d9d9;
+		margin: 0px;
+		padding: 0px;
+		height: 100%;
+		font-family: arial;
+		font-size: 16px;
+}
+.container{
+	background-color: #fff;
+	max-width: 1024px;
+	min-height: 100%;
+	margin: 0 auto;
+}
+
+header{
+		background-color: #868585;
+		color: #fff;
+		padding-top: 1em;
+		min-height: 110px;
+
+}
+	.logo_izq{
+		padding-left: 1em;
+		float: left;
+		/*background-color: red;*/
+	}
+	.titulo{
+		padding-left: 1em;
+		float: left;
+		margin-top: 0.5em;
+		/*background-color: green;*/
+	}
+	.logo_der>img{
+		float: right;
+		/*border: 1px solid #fff;*/
+		border-radius: 50px;
+		height: 90px;
+		width: 90px;
+		margin-right: 1em;
+	}
+
+nav{
+	background-color: #55acee;
+	min-height: 40px;
+
+}
+	.menu{
+		margin:0;
+		padding:0;
+	}
+	.menu>li{
+		display: inline-block;
+		float: right;
+		
+		font-weight: bold;
+		margin-right: 1em;
+		padding-top: 0.5em;
+		font-size: 18px;
+		
+	}
+	.menu>li>a{
+		text-decoration: none;
+		color: #FFF;
+	}
+
+.contenido{
+	padding:1em;
+}
+.trabajos{
+	width: 30%;
+	height: 150px;
+	margin-right: 1.4%;
+	margin-left: 1.4%;
+	margin-bottom: 1em;
+	background-color: #f4f2f2;
+	border:2px solid #55acee;
+	border-radius: 5px;
+	float: left;
+}
+	.trabajos>a>img{
+		width: 100%;
+		height: 100%;
+	}
+.trabajos:hover{
+	border:2px solid #064a4c;		
+}
+footer{
+	background-color: #272727;
+	color: #55acee;
+	height: 100px;
+	width: 100%;
+	padding-top: 1em;
+	display: inline-block;
+	font-weight: bold;
+}
+	.redes{
+		margin-top: 10px;
+		text-align: center;
+		color:#fff;
+	}
+	.redes>a{color: #fff;}
+
+@media screen and (max-width: 768px) {
+	.trabajos{
+		background-color: red;
+		width: 46%;
+		
+	}
+	
+}
+
+@media (max-width: 480px) {
+	.trabajos{
+		background-color: blue;
+		width: 96%;
+		vertical-align: top;
+	}
+	.logo_der{
+		display: none;
+	}
+	.logo_izq>img{ width: 70%; height: 70%; }
+	.titulo{ float: right; font-size: 1em; vertical-align: top; }
+}
+
